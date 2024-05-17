@@ -19,8 +19,8 @@ spec:
   sources:
     - repoURL: https://github.com/dgusarovs/demo-dev.git
       targetRevision: main
-      path: applications/app1.yaml
+      path: applications/app1
     - repoURL: https://github.com/dgusarovs/demo-dev.git
       targetRevision: main
-      path: applications/app2.yaml
+      path: applications/app2
 
