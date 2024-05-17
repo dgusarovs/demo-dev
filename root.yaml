@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/prometheus-community/helm-charts.git
+    repoURL: https://github.com/dgusarovs/demo-dev.git
     targetRevision: main
     path: .
   destination:
