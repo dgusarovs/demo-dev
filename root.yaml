@@ -19,8 +19,8 @@ spec:
   sources:
     - repoURL: https://github.com/prometheus-community/helm-charts.git
       targetRevision: main
-      path: app1.yaml
+      path: applications/app1.yaml
     - repoURL: https://github.com/prometheus-community/helm-charts.git
       targetRevision: main
-      path: app2.yaml
+      path: applications/app2.yaml
 
