@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/dgusarovs/demo-dev.git
-    targetRevision: main
+    targetRevision: HEAD
     path: .
   destination:
     server: https://kubernetes.default.svc
