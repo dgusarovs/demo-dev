@@ -1,3 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: alertmanager
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prometheus
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -18,9 +28,5 @@ spec:
       selfHeal: true
   sources:
     - repoURL: https://github.com/dgusarovs/demo-dev.git
-      targetRevision: main
-      path: applications/app1
-    - repoURL: https://github.com/dgusarovs/demo-dev.git
-      targetRevision: main
-      path: applications/app2
-
+      targetRevision: HEAD
+      path: applications
