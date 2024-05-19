@@ -26,6 +26,9 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
+    - PruneLast=true
   sources:
     - repoURL: https://github.com/dgusarovs/demo-dev.git
       targetRevision: HEAD
