@@ -13,3 +13,5 @@ Structure:
 
 To deploy apps:
 kubectl apply -f root.yaml
+To deploy helmchart:
+argocd app create kube-state-metrics   --repo https://github.com/dgusarovs/demo-dev.git   --path HelmCharts/ChartTest1   --dest-server https://kubernetes.default.svc   --dest-namespace kube-state-metrics   --sync-option CreateNamespace=true   --parameter namespace=kube-state-metrics   --values values_dev.yaml --sync-policy automated
